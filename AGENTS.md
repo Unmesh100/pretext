@@ -29,6 +29,7 @@ Internal notes for contributors and agents. Use `README.md` as the public source
 - `pages/accuracy.ts` — browser sweep plus per-line diagnostics
 - `pages/benchmark.ts` — performance comparisons
 - `pages/bubbles.ts` — bubble shrinkwrap demo
+- `pages/demo.ts` — manual line-placement demo built on `layoutWithLines()`
 
 ### Implementation notes
 
@@ -93,7 +94,6 @@ Internal notes for contributors and agents. Use `README.md` as the public source
 - `layoutWithLines()` now returns line boundary cursors (`start` / `end`) in addition to `{ text, width }`; keep that data model useful for future manual reflow work.
 - ASCII fast path could skip some CJK, bidi, and emoji overhead.
 - Benchmark methodology still needs review.
-- `pages/demo.html` is still a placeholder.
 - Additional CSS configs are still untested: `break-all`, `keep-all`, `strict`, `loose`, `anywhere`, `pre-wrap`.
 
 ### Related
